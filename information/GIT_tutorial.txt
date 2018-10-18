@@ -1,0 +1,69 @@
+ADDEN
+-github -> server
+- git clone "repo path"
+- git status
+	-> on branch master
+	-> gibt status an
+	-> zeigt auch modifikationen an
+- git add file name (stagephase)
+	-> nicht commit
+
+- git commit -m(steht für msg)"fuer msg"
+	_> commit sind alle local auf dem master branch! es muss noch gepusht werden 
+	  um die aufm server master branch zu sehen !
+-git log 
+	-> hier sieht man die commits bzw was so passiert ist!
+- git push 
+	pushed commits auf server master branch
+
+UPDATE
+1. add 
+2. commit
+3. push
+
+LÖSCHEN
+-> git add
+-> git commit -""
+-> git push
+gleiches vorgehen wie bei adden
+
+PULLEN
+-> git pull
+-> holt sich alle updates und neue dateien
+
+BRANCH WELCHELM
+-> git checkout "neuer branch"
+-> git branch
+	-> zeigt alle branches an und wo man drin ist gerade :)
+
+ANDERE AM REPO TEILHABEN LASSEN
+-> im repo auf settings und collaborators und username hinzufügen!
+
+MEHERE BRANCHES
+-> neben den master local branches auf der einen seite und den master hub branches auf der 
+anderen SEite kann man noch weitere Branches local und auch auf hub haben um so zu einen bestimmter
+Version local seperat darauf arbeiten kann um die später zu pushen und sich von anderen holen!
+-> im gibthub und den eigentlichen repo auf <>Code und dann beim dropdown branches(standart master) auswählen
+
+-> locales abbranchen wird eine kopier local genommen und alle beide ändern sich wie ein spiegel nur
+	commits werden dann nur auf den einzelnen serverbranch geholt
+	-> ab den ersten commit auf einen der beiden ist der spiegel vorbei :D ...
+
+NEUEN BRANCH ERSTELLEN (DATENKRABBE NENNT ES ABRANCHEN):
+-> grundsätzlich sollte man vom master ausgehen ( kommt aber aufm zweck an )
+->1.  git checkout -b "branchname"
+.>2.  git push -u origin "branchname" -> push die dateien auf den server die im local branch liegen
+
+
+MODIFIKATIONEN RÜCKGÄNGIG MACHEN
+Checkout wechselt datei in ausgangszustand(server branch)
+-> git checkout "modi_datei"
+
+ÄNDERUNGEN AN DATEIEN ANZEIGEN LASSEN
+um zu schauen was an einer modifizierten daten(git status) geändert wurde kann man :
+-> git diff "modi_datei" 
+	+ line wurde geaddet
+	- line wurde entfernt
+
+	
+
